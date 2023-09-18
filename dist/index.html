@@ -7,34 +7,170 @@
     <title>Appypie-HarshitSinghTomar</title>
   </head>
   <body class="font-sans text-center">
-    <header class="flex flex-col text-white  bg-center " style="background-image: url('./assets/Group\ 1.png');">
+  
+    <header
+      class="w-screen flex flex-col text-white bg-center"
+      style="background-image: url('./assets/Group\ 1.png')"
+    >
       <nav class="flex w-100 px-28 py-6 justify-between">
-        
-        <img src="./assets/appypie-logo copy.png" class="h-10"/>
+        <img src="./assets/appypie-logo copy.png" class="h-10" />
         <div class="flex gap-4 text-xs items-center text-gray-100">
           <a>WHY CONNECT</a>
           <a>APP DIRECTORY</a>
           <a>APP INTERGRATIONS</a>
           <a>PRICING</a>
           <a>START FREE</a>
-          <button class="px-2 py-1" style="border: 1px solid white;">LOGIN</button>
+          <button class="px-2 py-1" style="border: 1px solid white">
+            LOGIN
+          </button>
         </div>
       </nav>
       <div class="mb-10">
-         <h1 class="text-xl mb-4">Define your workflows with seamless integrations</h1>
-         <p class="text-xs text-grey-100">Integrations At Your Fingertips. Initiate your workflows with seamless integrations, and automate your business.</p>
+        <h1 class="text-xl mb-4">
+          Define your workflows with seamless integrations
+        </h1>
+        <p class="text-xs text-grey-100">
+          Integrations At Your Fingertips. Initiate your workflows with seamless
+          integrations, and automate your business.
+        </p>
       </div>
     </header>
 
-    <main class="h-full px-28 py-10">
-        <section class="p-8" style="border: 1px solid #00000036;">
-          <input type="search" class=" w-full h-8 " style="border: 1px solid #00000036;">
-          <img src="./assets/Layer 85.png"/>
-        </input>
-        </section>
-        <section>
+    <main class="h-full px-28 py-10 bg-gray-100">
+      <section
+        id="search-app-icons"
+        class="p-8 flex flex-col items-center bg-white"
+        style="border: 1px solid white"
+      >
+        <div
+          type="search"
+          class="h-10 relative"
+          style="border: 1px solid #00000036; width: 60vw"
+        >
+          <img
+            src="./assets/search.png"
+            class="h-6 bg-transparent absolute inset-2"
+          />
+          <input
+            type="search"
+            class="border-opacity-0 outline-none w-full pl-8 h-full"
+            placeholder="Search: 100+ Apps"
+          />
 
+          <div class="flex">
+            <select
+              class="bg-gray-100 text-gray-500 absolute end-0 inset-y-0 w-[30%] h-[100%] text-sm outline-slate-400"
+            >
+              <option>sort by: Popular</option>
+            </select>
+          </div>
+        </div>
+        <section
+          id="apps-container"
+          class="grid grid-flow-row grid-cols-3 md:grid-cols-6 lg:grid-cols-8 gap-12 mt-12 flex-wrap max-w-full"
+        >
+  
         </section>
+      </section>
+      <div
+        class="w-full bg-gray-200 flex justify-start items-center gap-4 h-8"
+        style="border-bottom: 1px solid rgb(196, 195, 195)"
+      >
+        <p
+          class="px-[9px] py-[3px] ml-8 bg-[#DE593C] text-xs rounded-sm text-white"
+        >
+          X Gmail
+        </p>
+        <p class="px-[9px] py-[3px] bg-[#4FC29F] text-xs rounded-sm text-white">
+          X Slack
+        </p>
+      </div>
+      <section id="plans-container" class="mt-16 p-16 grid gap-y-20 grid-cols-1 md:grid-cols-2 place-items-center" >
+          <!-- <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
+        <div id="img-container" class="flex gap-4 items-center">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/gmail.png"
+              alt="gmail"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/fbBlue.png"
+              alt="facebook"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+        </div>
+        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
+        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
+      </div> -->
+        <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
+        <div id="img-container" class="flex gap-4 items-center">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/gmail.png"
+              alt="gmail"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/fbBlue.png"
+              alt="facebook"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+        </div>
+        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
+        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
+      </div>
+      </div>
+        <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
+        <div id="img-container" class="flex gap-4 items-center">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/gmail.png"
+              alt="gmail"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
+          <div
+            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
+            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
+          >
+            <img
+              src="./assets/fbBlue.png"
+              alt="facebook"
+              class="object-contain h-10 w-10"
+            />
+          </div>
+        </div>
+        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
+        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
+      </div>
+   
+      </section>
     </main>
+    <script type="module" src="./script.js"></script>
   </body>
 </html>

@@ -6,15 +6,15 @@
     <link href="style.css" rel="stylesheet" />
     <title>Appypie-HarshitSinghTomar</title>
   </head>
-  <body class="font-sans text-center max-w-screen h-screen">
+  <body class="font-sans text-center max-w-screen";>
   
     <header
-      class="w-full flex flex-col text-white bg-center"
+      class="w-full flex flex-col text-white bg-cover"
       style="background-image: url('./assets/Group\ 1.png')"
     >
-      <nav class="flex w-100 px-28 py-6 justify-between">
-        <img src="./assets/appypie-logo copy.png" class="h-10" />
-        <div class="flex gap-4 text-xs items-center text-gray-100">
+      <nav class="flex max-w-100 px-1 md:px-12 lg:px-24 py-5 gap-2 md:justify-between lg:justify-between">
+        <img src="./assets/appypie-logo copy.png" class="h-6 lg:h-10 md:h-8" />
+        <div class="flex gap-[2px] md:gap-3 lg:gap-4 text-[8px] lg:text-sm md:text-xs items-center text-gray-100">
           <a>WHY CONNECT</a>
           <a>APP DIRECTORY</a>
           <a>APP INTERGRATIONS</a>
@@ -36,16 +36,16 @@
       </div>
     </header>
 
-    <main class="h-full px-28 py-10 bg-gray-100">
+    <main class="h-full w-full flex flex-1 flex-col justify-center md:px-20 lg:px-28 py-10 bg-gray-100">
       <section
         id="search-app-icons"
-        class="p-8 flex flex-col items-center bg-white"
+        class="p-8 w-full flex flex-col items-center bg-white"
         style="border: 1px solid white"
       >
         <div
           type="search"
-          class="h-10 relative"
-          style="border: 1px solid #00000036; width: 60vw"
+          class="h-10 relative w-full md:w-[80vw] lg:w-[60vw]"
+          style="border: 1px solid #00000036; "
         >
           <img
             src="./assets/search.png"
@@ -53,13 +53,13 @@
           />
           <input
             type="search"
-            class="border-opacity-0 outline-none w-full pl-8 h-full"
+            class="border-opacity-0 outline-none w-full pl-10 text-xs h-full"
             placeholder="Search: 100+ Apps"
           />
 
           <div class="flex">
             <select
-              class="bg-gray-100 text-gray-500 absolute end-0 inset-y-0 w-[30%] h-[100%] text-sm outline-slate-400"
+              class="bg-gray-100 p-2 cursor-pointer text-gray-500 absolute end-0 inset-y-0 w-[40%] md:w-[30%] lg:w-[20%] h-[100%] text-sm outline-slate-400"
             >
               <option>sort by: Popular</option>
             </select>
@@ -85,92 +85,28 @@
           X Slack
         </p>
       </div>
-      <section id="plans-container" class="mt-16 p-16 grid gap-y-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 place-items-center" >
-          <!-- <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
-        <div id="img-container" class="flex gap-4 items-center">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/gmail.png"
-              alt="gmail"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/fbBlue.png"
-              alt="facebook"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-        </div>
-        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
-        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
-      </div> -->
-        <!-- <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
-        <div id="img-container" class="flex gap-4 items-center">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/gmail.png"
-              alt="gmail"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/fbBlue.png"
-              alt="facebook"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-        </div>
-        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
-        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
-      </div>
-      </div>
-        <div class="h-[280px] w-[330px] bg-[#DE593C] px-8 text-white flex flex-col gap-6 justify-center items-center">
-        <div id="img-container" class="flex gap-4 items-center">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/gmail.png"
-              alt="gmail"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-          <img src="./assets/plus.svg" alt="add" class="h-10 w-10">
-          <div
-            class="w-14 h-14 grid place-content-center rounded-xl bg-white shadow-md"
-            style="border: 1px solid white; box-shadow: 0px 5px 2px #00000014"
-          >
-            <img
-              src="./assets/fbBlue.png"
-              alt="facebook"
-              class="object-contain h-10 w-10"
-            />
-          </div>
-        </div>
-        <p class="text-sm font-semibold">Get Slack notifications for new Salesforce opportunities</p>
-        <button class="text-xs px-4 py-2 mt-8 rounded-sm" style="border: 1px solid #FFFFFF;">CONNECT THIS FLOW</button>
-      </div>
-    -->
+      <p class="bg-gray-200 p-2 mt-4 text-black font-bold text-sm">Perfect Matches For Your Selected Apps</p>
+      <section id="plans-container" class="mt-16 p-16 mb-0 grid bg-white gap-y-16 grid-cols-1 md:grid-cols-1 lg:grid-cols-2 place-items-center" >
       </section>
     </main>
+    <footer class="flex flex-col justify-evenly h-32 lg:flex-row lg:items-center lg:justify-between items-center lg:h-18 md:flex-row md:px-10 lg:px-16 bg-gray-100" style="border-top: 1px solid rgb(213, 208, 208);">
+      <div class="lg:h-24 lg:w-24 md:h-16 md:w-16">
+        <img src="./assets/appypie-logo copy.png" alt="appypie-logo" class="h-16 w-16 object-contain lg:h-24 lg:w-24 md:h-24 md:w-24">
+      </div>
+      <div class="flex flex-col text-gray-500 font-semibold gap-2">
+         <span class="text-[8px] md:text-xs lg:text-[12px]">ABOUT US | CONTACT US | PRIVACY POLICY | TERMS OF USE</span>
+         <span class="text-[6px] md:text-sm lg:text-[10px]" >© 2023, Appy Pie. All Rights Reserved. Technology protected by US Patent No. PCT/US21/36182</span>
+      </div>
+      <div class="flex gap-1 lg:gap-3 h-3 md:h-4 lg:h-4">
+        <img src="./assets/fb.png" alt="facebook" class="object-contain">
+        <img src="./assets/twitter.png" alt="twitter" class="object-contain">
+        <img src="./assets/linkedIn.png" alt="facebook" class="object-contain">
+        <img src="./assets/pinterest.svg" alt="facebook" class="object-contain">
+        <img src="./assets/instagram.svg" alt="facebook" class="object-contain">
+        <img src="./assets/youTube.png" alt="facebook" class="object-contain">
+        <img src="./assets/googleplus.svg" alt="facebook" class="object-contain">
+      </div>
+    </footer>
     <script type="module" src="./script.js"></script>
   </body>
 </html>
